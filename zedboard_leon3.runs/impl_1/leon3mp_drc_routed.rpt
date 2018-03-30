@@ -1,0 +1,77 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
+| Date         : Fri Mar 30 14:04:42 2018
+| Host         : STKServer running 64-bit major release  (build 9200)
+| Command      : report_drc -file leon3mp_drc_routed.rpt -pb leon3mp_drc_routed.pb -rpx leon3mp_drc_routed.rpx
+| Design       : leon3mp
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 8
++--------+----------+--------------------------+------------+
+| Rule   | Severity | Description              | Violations |
++--------+----------+--------------------------+------------+
+| BUFC-1 | Warning  | Input Buffer Connections | 7          |
+| ZPS7-1 | Warning  | PS7 block required       | 1          |
++--------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+BUFC-1#1 Warning
+Input Buffer Connections  
+Input buffer gpio0.pio_pads[1].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op/IBUF (in gpio0.pio_pads[1].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#2 Warning
+Input Buffer Connections  
+Input buffer gpio0.pio_pads[2].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op/IBUF (in gpio0.pio_pads[2].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#3 Warning
+Input Buffer Connections  
+Input buffer gpio0.pio_pads[3].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op/IBUF (in gpio0.pio_pads[3].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#4 Warning
+Input Buffer Connections  
+Input buffer gpio0.pio_pads[4].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op/IBUF (in gpio0.pio_pads[4].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#5 Warning
+Input Buffer Connections  
+Input buffer gpio0.pio_pads[5].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op/IBUF (in gpio0.pio_pads[5].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#6 Warning
+Input Buffer Connections  
+Input buffer gpio0.pio_pads[6].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op/IBUF (in gpio0.pio_pads[6].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+BUFC-1#7 Warning
+Input Buffer Connections  
+Input buffer gpio0.pio_pads[7].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op/IBUF (in gpio0.pio_pads[7].pio_pad/xcv.x0/cmos0.cmos_18.slow0.op macro) has no loads. It is recommended to have an input buffer drive an internal load.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

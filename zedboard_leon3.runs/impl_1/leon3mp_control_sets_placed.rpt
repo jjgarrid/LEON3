@@ -1,0 +1,66 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4.1 (win64) Build 2117270 Tue Jan 30 15:32:00 MST 2018
+| Date         : Fri Mar 30 14:03:40 2018
+| Host         : STKServer running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file leon3mp_control_sets_placed.rpt
+| Design       : leon3mp
+| Device       : xc7z020
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     4 |
+| Unused register locations in slices containing registers |    11 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |              20 |            5 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------------------------------------------------+--------------------------------------------------------------+------------------+------------------+----------------+
+|                           Clock Signal                           |                         Enable Signal                        | Set/Reset Signal | Slice Load Count | Bel Load Count |
++------------------------------------------------------------------+--------------------------------------------------------------+------------------+------------------+----------------+
+|  ahbjtaggen0.ahbjtag0/gtckbuf.tckbuf/xil.xil0/tpr2_reg[addr][10] |                                                              |                  |                1 |              1 |
+|  ahbjtaggen0.ahbjtag0/gtckbuf.tckbuf/xil.xil0/tpr2_reg[addr][10] | ahbjtaggen0.ahbjtag0/tap0/zynq7v.u0/E[1]                     |                  |                3 |              5 |
+|  ahbjtaggen0.ahbjtag0/gtckbuf.tckbuf/xil.xil0/tpr2_reg[addr][10] | ahbjtaggen0.ahbjtag0/tap0/zynq7v.u0/E[0]                     |                  |                2 |              8 |
+| ~ahbjtaggen0.ahbjtag0/gtckbuf.tckbuf/xil.xil0/tpr2_reg[addr][10] | ahbjtaggen0.ahbjtag0/newcom.jtagcom0/tnr2[addrlo][9]_i_1_n_0 |                  |                1 |              8 |
++------------------------------------------------------------------+--------------------------------------------------------------+------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 5      |                     1 |
+| 8      |                     2 |
++--------+-----------------------+
+
+
